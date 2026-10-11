@@ -1,6 +1,6 @@
 # Qatar–Bahrain Trade Mission website
 
-Portable bilingual (English / Arabic) static website for the Qatar Exports trade mission. It uses the supplied QDB/Qatar Exports logo and a burgundy identity derived from the artwork.
+Portable bilingual (English / Arabic) static website for the Qatar Exports trade mission. It uses the supplied QDB/Qatar Exports logo and a burgundy identity derived from the artwork. The deliverable is a static site whose editable mission data is in `mission.json`—not a standalone JSON document, since browsers need HTML/CSS/JavaScript to render the website.
 
 ## Files
 
@@ -21,10 +21,11 @@ From this directory, run `python3 -m http.server 8080`, then open `http://localh
 2. From this directory, set the repository remote and push the branch:
 
    ```sh
+   cd qatar-bahrain-trade-mission-site
+   git init -b main
    git remote add origin https://github.com/YOUR-ACCOUNT/YOUR-REPOSITORY.git
    git add .
    git commit -m "Build Qatar Bahrain trade mission website"
-   git branch -M main
    git push -u origin main
    ```
 
